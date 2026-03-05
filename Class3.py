@@ -8,3 +8,9 @@ print(a[11:16:1])
 print(a[16::1])
 
 print(ord('A'))
+
+
+age=23
+name="souptik"
+
+print(f"My name is\t{name} and \n\tage is\t{age}")
