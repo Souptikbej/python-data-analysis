@@ -52,6 +52,7 @@ else:
 '''
 
 #Question 6 :Ask for purchase amount. Apply discounts based on Threshold:eg,above 1000->10%off , above 5000->20%off. Print final bill.
+'''
 bill=int(input("Enter your bill amount : "))
 if bill>=1000 and bill <=4999:
   print(f"You got 10% off on your Shopping\nYour final amount is : {(bill*90)/100}")
@@ -59,3 +60,26 @@ elif bill>=5000:
   print(f"You got 20% off on your Shopping\nYour final amount is : {(bill*80)/100}")
 else:
   print("Sorry no discount avalible on your shopping.")
+'''
+
+
+#Question 7 :Check Vowel and consonent
+'''
+c=input("enter alphabet : ")
+if c in "aeiouAEIOU":
+  print("It is vowel")
+else:
+  print("It is consonent")
+'''
+
+
+#Question 8 :Reservers interger number
+
+n=int(input(""))
+s = str(abs(n)) # Use abs() to handle negative numbers correctly
+reversed_s = s[::-1]
+reversed_n = int(reversed_s)
+if n < 0:
+    print(-reversed_n)
+else:
+    print(reversed_n)
