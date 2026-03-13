@@ -89,6 +89,7 @@ for i in range(b-1):
 print(f"After power your answer is {power}")
 '''
 #Question 10 : Prime Number Check
+'''
 n= int (input("Give your number (prime check) :- "))
 for i in range(2,n):
   if n%i==0:
@@ -96,3 +97,13 @@ for i in range(2,n):
     break
 else:
   print("Your number is prime number.")
+'''
+'''
+
+n=int(input("Enter number : "))
+r=str(abs(n))
+s=0
+for i in range(0,len(r)):
+  s+=int(r[i])
+print(s)
+'''
