@@ -98,21 +98,11 @@ for i in range(2,n):
 else:
   print("Your number is prime number.")
 '''
+#Question 11 : count even and odd number between given range 
 '''
-
-n=int(input("Enter number : "))
-r=str(abs(n))
-s=0
-for i in range(0,len(r)):
-  s+=int(r[i])
-print(s)
-'''
-
 num = input("")
-
 even_count = 0
 odd_count = 0
-
 for digit in num:
     if digit == '-':
         continue
@@ -121,6 +111,85 @@ for digit in num:
         even_count += 1
     else:
         odd_count += 1
-
 print("Even: ", even_count)
 print("Odd: ", odd_count)
+'''
+#Question 12 : Print all numbers between 1 and n that exactly 3 factors,eg- 4(1,2,4) , 9(1,3,9)
+'''
+n = int(input())
+s = ""
+for i in range(1, n+1):
+    c = 0
+    for j in range(1, i+1):
+        if i % j == 0:
+            c += 1
+        if c >= 4:
+            break
+    if c == 3:
+        s += str(i) + " "
+print(s)
+'''
+#Question 13 : Armstrong Number checker
+'''
+n=int(input("enter number : "))
+s=str(n)
+sum=0
+for i in range(0,len(s)):
+  p=int(s[i])**len(s)
+  print(p)
+  sum=sum+p
+if n==sum:
+  print("Armstrong")
+else:
+  print("Not Armstrong")
+'''
+#Question 14 : Print factors of a number
+'''
+n= int(input(""))
+s=""
+for i in range(1,n+1):
+  if n%i==0:
+    s+=str(i)+" "
+print(s)
+'''
+#Question 15 : Factors of numbers in range(For every number in the range , print its factors on a new line,separated by spaces.)
+'''
+a=int(input(""))
+b=int(input(""))
+for i in range(a,b+1):
+  s=""
+  for j in range(1,i+1):
+    if i%j==0:
+      s+=str(j)+" "
+  print(s)
+'''
+#Question 16 : Number Triangle
+'''
+n=int(input(""))
+for i in range(1,n+1):
+  s=""
+  for j in range (1,i+1):
+    s+=str(j)
+  print(s)
+'''
+#Question 17 : Right Angled Star Triangle
+'''
+n=int(input(""))
+for i in range(1,n+1):
+  s=""
+  for j in range (1,i+1):
+    s+="*"
+  print(s)
+'''
+#Question 18 : Inverted Star Triangle
+'''
+n=int(input(""))
+for i in range(n,0,-1):
+  s=""
+  for j in range (i,0,-1):
+    s+="*"
+  print(s)
+'''
+#Question 19 : Check Anagrams Without Built-ins
+a=input("")
+b=input("")
