@@ -191,5 +191,29 @@ for i in range(n,0,-1):
   print(s)
 '''
 #Question 19 : Check Anagrams Without Built-ins
+'''
 a=input("")
 b=input("")
+if len(a)!=len(b):
+  print("Not Anagram")
+else:
+  okwc=0
+  for i in range (len(a)):
+    awc=0
+    bwc=0
+    for j in range(len(a)):
+      if a[i]==a[j]:
+        awc+=1
+      if a[i]==b[j]:
+        bwc+=1
+    if awc==bwc:
+      okwc+=1
+  if okwc == len(a):
+    print("Anagram")
+  else:
+    print("Not Anagram")
+'''
+#Question 20 : print perfect square
+s,e= map(int,input("").split())
+
+      
