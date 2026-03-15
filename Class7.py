@@ -214,6 +214,25 @@ else:
     print("Not Anagram")
 '''
 #Question 20 : print perfect square
+'''
 s,e= map(int,input("").split())
-
-      
+st=""
+for i in range (1,e+1):
+  p=i**2
+  if p>=s and p<=e:
+    st+=str(p)+" "
+print(st)
+'''
+#Question 21 : Character count in String
+'''
+s=input("")
+print(len(s))
+'''
+#Question 22 : Largest Digit in Number
+n=int(input(""))
+s=str(n)
+m=0
+for i in range(0,len(s)):
+  if m<int(s[i]):
+    m=int(s[i])
+print(m)
