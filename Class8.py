@@ -28,9 +28,9 @@ while n!=0:
   s=s*10+r
   n=n//10
 if s==n1:
-  print("Palindrome")
+  print("Palindrome Number")
 else:
-  print("Not Palindrome")
+  print("Not Palindrome Number")
 '''
 #Question 4 : Automorphic Number
 '''
@@ -81,6 +81,7 @@ else:
     print(sum / count)
 '''
 #Question 7 : Strong Number Check eg, 145=1!+4!+5!
+'''
 n=int(input(""))
 copy=n
 s=0
@@ -95,3 +96,4 @@ if copy==s:
   print("Strong Number")
 else:
   print("Not Strong Number")
+'''
