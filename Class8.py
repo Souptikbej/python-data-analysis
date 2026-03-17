@@ -33,6 +33,7 @@ else:
   print("Not Palindrome")
 '''
 #Question 4 : Automorphic Number
+'''
 n= int(input("Enter a number : "))
 copy=n
 square=n**2
@@ -45,3 +46,46 @@ if copy==x:
   print("Automorphic Number")
 else:
   print("Not Automorphic Number")
+'''
+#Question 5 : Check wheather a given number is a Harshad number or not
+'''
+n=int(input("Enter number : "))
+store=n
+n=abs(n)
+s=0
+if(n<=0):
+  print("Not Harshad Number")
+else:
+  while(n!=0):
+    r=n%10
+    s+=r
+    n=n//10
+  if (store%s==0):
+    print("Harshad Number")
+  else:
+    print("Not Harshad Number")
+'''
+#Question 6 :  
+'''
+sum = 0
+count = 0
+while True:
+    n = int(input())
+    
+    if n < 0:
+        break
+    
+    sum += n
+    count += 1
+
+if count == 0:
+    print(0)
+else:
+    print(sum / count)
+'''
+#Question 7 : Strong Number Check eg, 145=1!+4!+5!
+n=int(input(""))
+s=0
+while(n!=0):
+  r=n%10
+  for i in range
