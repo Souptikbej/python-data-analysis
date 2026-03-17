@@ -71,13 +71,10 @@ sum = 0
 count = 0
 while True:
     n = int(input())
-    
     if n < 0:
         break
-    
     sum += n
     count += 1
-
 if count == 0:
     print(0)
 else:
@@ -85,7 +82,16 @@ else:
 '''
 #Question 7 : Strong Number Check eg, 145=1!+4!+5!
 n=int(input(""))
+copy=n
 s=0
 while(n!=0):
   r=n%10
-  for i in range
+  f=1
+  for i in range(1,r+1):
+    f=f*i
+  s+=f
+  n=n//10
+if copy==s:
+  print("Strong Number")
+else:
+  print("Not Strong Number")
