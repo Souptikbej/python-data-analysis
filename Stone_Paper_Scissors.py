@@ -16,6 +16,8 @@ while True:
     uscore+=1
     print("You won the Round\n")
   elif user==com:
+    uscore+=1
+    cscore+=1
     print("It was a draw")
   else:
     cscore+=1
