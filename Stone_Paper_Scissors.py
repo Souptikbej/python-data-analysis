@@ -113,4 +113,4 @@ status_label = tk.Label(root, text="Choose your weapon to start!", font=("Helvet
 status_label.pack(pady=20)
 
 # Start the application
-root.mainloop()
+root.mainloop()       
