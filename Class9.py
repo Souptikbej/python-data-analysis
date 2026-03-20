@@ -76,6 +76,7 @@ def reverse_number(n):
 reverse_number(123456)
 '''
 #Armstrong Number Function
+'''
 def check_armstrong(n):
     if isinstance(n,int):
         p=len(str(n))
@@ -90,3 +91,25 @@ def check_armstrong(n):
         else:
             print("Not Armstrong Number")
 check_armstrong(153)
+'''
+#Longest Consecutive sequence
+def longest_consecutive(nums):
+    num_set = set(nums)
+    longest = 0
+
+    for num in num_set:
+        # check if it's the start of a sequence
+        if num - 1 not in num_set:
+            current = num
+            count = 1
+
+            while current + 1 in num_set:
+                current += 1
+                count += 1
+
+            longest = max(longest, count)
+
+    return longest
+n = int(input())
+nums = list(map(int, input().split()))
+print(longest_consecutive(nums))
