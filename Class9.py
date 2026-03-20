@@ -22,6 +22,8 @@ def addition(a,b):
   print(a+b)
 addition(10,10)
 '''
-for i in range(2):
-    for j in range(2):
-        print(i, j)
+def welcome_message(name):
+    # Write your code here
+    print(f"Welcome, {name}!")
+name=input("")
+welcome_message(name)
