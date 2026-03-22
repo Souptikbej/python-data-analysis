@@ -36,4 +36,16 @@ for i in range(len(a)):
     index2=i
 print(f"Second Maximum Element is {m2} and index is {index2}")
 '''
-#
+#Check if List is Sorted (Increasing)
+'''
+a=[1,2,3,4,5,6,7,8,9,10]
+for i in range(len(a)-1):
+  if a[i]< a[i+1]:
+    continue
+  else:
+    print("List is not sorted")
+    break
+else:
+  print("list is sorted")
+'''
+#Left Rotation by 1
