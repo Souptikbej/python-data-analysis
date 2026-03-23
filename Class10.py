@@ -112,10 +112,21 @@ else:
   print("Not found")
 '''
 #Bubble Sort
+'''
 a=[34,26,89,123,18,12,11]
-
-
-
-
-
+for j in range(len(a)-1):
+  for i in range(len(a)-1-j):
+    if a[i]>a[i+1]:
+      a[i],a[i+1]=a[i+1],a[i]
+print(f"Bubble Sort : {a}")
+'''
 #Selection Sort
+a=[34,26,89,123,18,12,11]
+for i in range(len(a)-1):
+  j=i+1
+  min=i
+  for k in range(j,len(a)):
+    if a[k]<a[min]:
+      min=k
+  a[i],a[min]=a[min],a[i]
+print(f"Selection Sort : {a}")
