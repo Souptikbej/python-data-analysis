@@ -121,6 +121,7 @@ for j in range(len(a)-1):
 print(f"Bubble Sort : {a}")
 '''
 #Selection Sort
+'''
 a=[34,26,89,123,18,12,11]
 for i in range(len(a)-1):
   j=i+1
@@ -130,3 +131,22 @@ for i in range(len(a)-1):
       min=k
   a[i],a[min]=a[min],a[i]
 print(f"Selection Sort : {a}")
+'''
+#split list into Halves
+'''
+numbers=[10,20,30,40,50]
+mid=(len(numbers)+1)//2
+print(numbers[:mid])
+print(numbers[mid:])
+'''
+#Find All Sublists eg, Input:1 2 3 ; Output:[[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]
+def find_all_sublists(lst):
+  result = []
+  n = len(lst)
+  for i in range(n):              # start index
+    for j in range(i, n):       # end index
+      result.append(lst[i:j+1])
+  return result
+lst = list(map(int, input().split()))
+result = find_all_sublists(lst)
+print(result)
