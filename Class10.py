@@ -140,6 +140,7 @@ print(numbers[:mid])
 print(numbers[mid:])
 '''
 #Find All Sublists eg, Input:1 2 3 ; Output:[[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]
+'''
 def find_all_sublists(lst):
   result = []
   n = len(lst)
@@ -150,3 +151,7 @@ def find_all_sublists(lst):
 lst = list(map(int, input().split()))
 result = find_all_sublists(lst)
 print(result)
+'''
+animals=['Zebra','Tiger','lion','Jackal','Kangaroo']
+for index,a in enumerate(animals):
+  print(index,a)
