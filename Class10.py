@@ -152,6 +152,44 @@ lst = list(map(int, input().split()))
 result = find_all_sublists(lst)
 print(result)
 '''
+#Print List items With there index
+'''
 animals=['Zebra','Tiger','lion','Jackal','Kangaroo']
 for index,a in enumerate(animals):
   print(index,a)
+'''
+#Concatination 
+'''
+
+lst=[12,15,95,65,35,45,85]
+lst=lst+[33,44,55,66]
+print(lst)
+'''
+#Merging
+'''
+lst=[12,15,95,65,35,45,85]
+lst2=[33,44,55,66]
+lst3=lst+lst2
+print(lst3)
+'''
+#Conversion
+'''  
+l=list("Souptik")
+print(l)
+'''
+#Copy
+'''
+lst=[10,20,30,40,50]
+lst2=[]
+lst2=lst2+lst
+print(lst)
+print(lst2)
+lst[0]=100
+print(lst[0],lst2[0])
+'''
+#Searching
+lst=list("Souptik")
+res='S' in lst
+print(res)
+res='B' not in lst
+print(res)
