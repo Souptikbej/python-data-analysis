@@ -51,6 +51,7 @@ for i,j in reversed(courses.items()):
   print(i,j)
 
 '''
+'''
 #Dictionary Methods
 st={1:"Souptik",2:"Arnab",3:"Surya",4:"Ankit",5:"Rupam"}
 St2={6:"Mansij",7:"Abhishak",8:"Goutam",9:"Indra",10:"Aliv"}
@@ -65,3 +66,56 @@ print(st.popitem())        #Remove Key and value & Returns Key and value , Its D
 print(st)
 print(st.pop(5))           #Remove key and value & returns its value
 print(st)
+'''
+
+
+#Display all distinct elements present in the given array
+'''
+a=[1,1,1,1,2,2,2,3,3,3,5,5,5,6,6,6,9,9,9,7,7,7,0]
+d={}
+for i in a:
+  if i not in d.keys():
+    c=a.count(i)
+    d[i]=c
+print(d.keys())
+'''
+
+
+#count frequency of Array Elements
+'''
+a=[1,1,1,1,2,2,2,3,3,3,5,5,5,6,6,6,9,9,9,7,7,7,0]
+d={}
+for i in a:
+  if i not in d.keys():
+    c=a.count(i)
+    d[i]=c
+print(d)
+'''
+#Compare character frequencies of two string and check if they match 
+'''
+s1="aabbcc"
+s2="aaaccab"
+if len(s1)==len(s2):
+  dict1={}
+  dict2={}
+
+  for i in s1:
+    dict1[i]=dict1.get(i,0)+1
+  
+  for i in s2:
+    dict2[i]=dict2.get(i,0)+1
+  
+  print(dict1==dict2)
+else:
+  print("Not same")
+'''
+#Find Duplicate in array using hashset (Detect and print elements that appear more than once in the array)
+'''
+a=[2,5,7,9,3,5,6,2,5,6,3,1,3]
+d={}
+for i in a:
+  d[i]=d.get(i,0)+1
+for i in d:
+  if d[i]>1:
+    print(i)
+'''
