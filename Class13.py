@@ -120,6 +120,7 @@ for i in d:
     print(i)
 '''
 #Intersection of two array
+'''
 a=[1,2,2,1]
 b=[2,2]
 d={}
@@ -130,3 +131,20 @@ for i in d.keys():
   if i in b:
     j.append(i)
 print(j)
+'''
+#Invert Dictionary
+'''
+d={'a': 10, 'b': 25, 'c': 20}
+a={}
+for i,j in d.items():
+  a[j]=i
+print(a)
+'''
+#Remove Emply and One Values
+'''
+d={'a': 1, 'b': None, 'c': '', 'd': 4}
+for i in list(d.keys()):
+  if d[i] is None or d[i]=='':
+    del d[i]
+print(d)
+'''
