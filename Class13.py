@@ -119,3 +119,14 @@ for i in d:
   if d[i]>1:
     print(i)
 '''
+#Intersection of two array
+a=[1,2,2,1]
+b=[2,2]
+d={}
+j=[]
+for i in a:
+  d[i]=d.get(i,0)+1
+for i in d.keys():
+  if i in b:
+    j.append(i)
+print(j)
