@@ -1,0 +1,28 @@
+{
+  "Books": [
+    {
+      "id": "B-7JZAY",
+      "book_name": "souptik",
+      "book_author": "souptik",
+      "book_copies": 30,
+      "book_avalible": 30,
+      "book_adds_on": "2026-04-12 17:19:39"
+    }
+  ],
+  "Members": [
+    {
+      "id": "M-47I9G",
+      "member_name": "Souptik Bej",
+      "member_email": "bejsouptik@gmail.com",
+      "borowed": [],
+      "member_adds_on": "2026-04-13 10:28:31"
+    },
+    {
+      "id": "M-PCN51",
+      "member_name": "Ankit karmakar",
+      "member_email": "ankit@gmail.com",
+      "borowed": [],
+      "member_adds_on": "2026-04-13 10:40:19"
+    }
+  ]
+}
